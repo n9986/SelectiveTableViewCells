@@ -8,6 +8,14 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface ViewController : UITableViewController
+{
+    BOOL shouldHideFoo;
+    BOOL shouldHideBar;
+    BOOL shouldHideBaz;
+}
 
+- (IBAction)toggleFoo:(id)sender;
+- (IBAction)toggleBar:(id)sender;
+- (IBAction)toggleBaz:(id)sender;
 @end
